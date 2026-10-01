@@ -1,4 +1,4 @@
-#Daugybos lentelė
+#Daugybos lentelė 
  
 sk=int(input("Įvesk skaičių:"))
 sudaugintas=1
