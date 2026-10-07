@@ -42,9 +42,6 @@ Dainu_sar = [("Lovecats", "The Cure", 3.38), ("w deszczu maleńkich żółtych k
 Dainu_sar.append(("I'm affraid of americans", "David Bowie", 5.00,))
 
 nr = 0
-
-# lst = [f"{char}-{char}({num})" for char, char, num in Dainu_sar]
-
 for char, char, num in Dainu_sar:
    nr += 1
    print(nr,". ", f"{char}-{char}({num})") #jei naudociau DI nebuciau tokia laiminga su situo kodu rn
