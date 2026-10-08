@@ -56,3 +56,5 @@ for i in range(len(Dainu_sar)):
 print("Grojarascio trukme: ",sum) #turetu but - 19.61
 
 #as tingiu defint funkcijas 
+
+# eee nu davai, netingėk
