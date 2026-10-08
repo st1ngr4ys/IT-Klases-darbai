@@ -4,11 +4,12 @@ groj.append("historie d'1 soir")
 groj.remove("going up the country")
 
 n = len(groj)
-print("Kiek dainų: ",n, "  Mano grojaraštis: ", end=" ")
-for i in groj:
-   print(i, end=" ,")
+print("Kiek dainų: ",n)
+print("Mano grojaraštis: ", end="")
+for i in range(len(groj)-1):
+   print(groj[i], end=", ")
 #    break
-
+print(f"{groj[n-1]}.")
 #----------------------------------------------------
 
 #tuple yra nepakeičiamas (nei el. pozicijų pakeisi, nei pačių el.) elementų sarašas.
@@ -17,11 +18,11 @@ for i in groj:
 #pvz tuple = ("daiktas",) <-- kablelis būtinas!
 #tuple vienam saraše gali turėti skirtingus duomenų tipus (str, int, boolean, float)
 
-daina = "Lovecats", "The Cure", 3.38,
-
+daina = ("Lovecats", "The Cure", 3.38,)
 sarasas = ["Lovecats", "The Cure", 3.38]
 
-print(sarasas[0], sarasas[1], sarasas[2])
+print("\n")
+print( sarasas[0], sarasas[1], sarasas[2])
 
 print(daina[0], daina[1], daina[2])
 
@@ -37,7 +38,8 @@ print(sarasas)
 
 #----------------------------------------------------
 
-Dainu_sar = [("Lovecats", "The Cure", 3.38), ("w deszczu maleńkich żółtych kwiatów", "Myslovitz", 4.35), ("going up the country", "Canned heat", 2.51), ("historie d'1 soir", "Bibi Flash", 4.37)]
+Dainu_sar = [("Lovecats", "The Cure", 3.38), ("w deszczu maleńkich żółtych kwiatów", "Myslovitz", 4.35),
+              ("going up the country", "Canned heat", 2.51), ("historie d'1 soir", "Bibi Flash", 4.37)]
 
 Dainu_sar.append(("I'm affraid of americans", "David Bowie", 5.00,))
 

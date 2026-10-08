@@ -77,6 +77,6 @@ def patikrink_slaptazodi(userinput):
 patikrink_slaptazodi(userinput="")
 gauk_slaptazodi()
 
-
+bfakjbf
 
     
