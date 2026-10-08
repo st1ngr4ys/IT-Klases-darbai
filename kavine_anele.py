@@ -13,3 +13,5 @@ def bendra_suma(cekis):
 
 # Arbatpinigiai 
 
+def arbatpinigiai(bendra_suma(cekis)):
+    
