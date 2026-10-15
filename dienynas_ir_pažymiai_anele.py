@@ -4,7 +4,7 @@
 # Kiek procentų pažymių yra ne mažesni už 8?
 # Įrašykite rezultatus į rezultatai.txt. Paleiskite programą antrą kartą ir papildykite failą, o ne perrašykite.
 
-with open("C:/Users/DESKTOP/Documents/mokykla/pazymiai.txt") as f:
+with open("pazymiai.txt", "r") as f:
     pazymiai= f.read().split()
 
     for i in range(len(pazymiai)):
@@ -61,3 +61,16 @@ with open("C:/Users/DESKTOP/Documents/mokykla/pazymiai.txt") as f:
                 return i
         return False 
     print("Pirmo 4-to indeksas:",ties_paieska(pazymiai, ketvertas))
+
+    def procentai(kiekis,pazymiai):
+        morethan = 0
+        for i in pazymiai:
+            if i >= 8:
+                morethan +=1
+        return morethan 
+
+    print("kiek pažymių daugiau už 8, procentaliai:", (procentai(kiekis,pazymiai)*100)//kiekis, "%")
+
+    with open("rezultatai.txt", "a") as rez:
+        rez.writelines([str(kiekis),"\n", str(suma(pazymiai))])
+        rez.close()

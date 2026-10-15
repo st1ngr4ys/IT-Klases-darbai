@@ -9,7 +9,13 @@
 
 
 #Čekis 
-cekis = [3.95, 6.00, 8.00, 4.65, 3.60, 3.69]
+cekis = []
+while True:
+    preke = (input("Įveskite kaina su kableliu, jei norit baigt įveskite q: "))
+    if preke=="q":
+        break
+    else:
+        cekis.append(float(preke))
 
 def bendra_suma(cekis):
     suma = 0
@@ -34,4 +40,5 @@ print("Su arbatpinigais:", f"{arbatpinigiai(suma): .2f}")
 def pvm(suma): 
     pvms= (suma*21)/100
     return pvms
+
 print("Kiek sumos yra PVM:", f"{pvm(suma): .2f}")
