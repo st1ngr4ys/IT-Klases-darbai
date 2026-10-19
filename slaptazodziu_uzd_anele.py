@@ -33,7 +33,8 @@ with open("slaptazodziai.txt", "r") as f: #pasizymeti ka daro kaip atidaro faila
             if i.islower():
                 m = True
 
-            return ilgis, sk, char, d, m
+            return ilgis, sk, char, d, m # if galima i viena cikla 
+        # ir tasku nepamirst 
 
 print(ivertinimas(slap_list[5]))
 
